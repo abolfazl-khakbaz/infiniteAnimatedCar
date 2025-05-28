@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+/* body {
+  background-image: url(../img/e-bg.jpg);
+} */
+.courseTitle {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  margin: 150px 0 25px 0;
+  color: black;
+}
+.main-bg {
+  background-image: url(../img/sky.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  overflow-x: hidden;
+  position: relative;
+}
+.road {
+  background-image: url(../img/road.jpg);
+  position: absolute;
+  width: 1000%;
+  height: 100px;
+  bottom: 0;
+  left: 0;
+  display: block;
+  background-repeat: repeat-x;
+  animation: road 5s linear infinite;
+}
+.city {
+  background-image: url(../img/city.png);
+  position: absolute;
+  width: 1000%;
+  height: 250px;
+  bottom: 100px;
+  filter: brightness(0);
+  background-repeat: repeat-x;
+  animation: city 9s linear infinite;
+  display: block;
+}
+
+@keyframes road {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-4000px);
+  }
+}
+@keyframes city {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-4000px);
+  }
+}
+.car-container {
+  position: absolute;
+  bottom: 250px;
+  left: 20%;
+}
+.car-wrapper {
+  position: relative;
+}
+.car-and-wheel {
+  position: absolute;
+  width: 100%;
+  
+}
+.car-and-wheel .car {
+  width: 400px;
+  height:200px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.car-wheel {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  animation: car-wheel 0.5s linear infinite;
+  bottom: 10.3%;
+}
+
+
+.wheel1 {
+  position: absolute;
+  left: 278px;
+}
+.wheel2 {
+  position: absolute;
+  left: 33px;
+}
+
+
+
+@keyframes car-wheel {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+  
+}
